@@ -88,10 +88,10 @@ body {
 	font-family: 'Exo', sans-serif;
 	z-index: 1000;
 	
-	transition: all 1.2s ease-out;
-    -webkit-transition: all 1.2s ease-out; /** Chrome & Safari **/
-    -moz-transition: all 1.2s ease-out; /** Firefox **/
-    -o-transition: all 1.2s ease-out; /** Opera **/
+	transition: all 1.1s ease-out;
+    -webkit-transition: all 1.1s ease-out; /** Chrome & Safari **/
+    -moz-transition: all 1.1s ease-out; /** Firefox **/
+    -o-transition: all 1.1s ease-out; /** Opera **/
 }
 .header .name {
 	font-size:32px;
