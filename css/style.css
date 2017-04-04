@@ -1,0 +1,273 @@
+body {
+	background-color: transparent ;
+	
+	-webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+.hidden-block {
+	position: absolute;
+	top: 13%;
+	background: white;
+	width: 50%;
+	height: 64px;
+	z-index: 100;
+	-webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    -ms-transition: all 0.9s ease-out;
+    -o-transition: all 0.9s ease-out;
+    transition: all 0.9s ease-out;
+}
+#lblock {
+	left: 0px;
+	transform: rotate(180deg);	
+}
+
+#rblock {
+	right: 0px;
+}
+
+#n1 {
+	/*position: absolute;*/
+} 
+#n2 {
+	/*position: absolute;*/
+} 
+
+.move-right{
+    transform: translate(100px,0);
+    -webkit-transform: translate(100px,0); /** Chrome & Safari **/
+    -o-transform: translate(100px,0); /** Opera **/
+    -moz-transform: translate(100px,0); /** Firefox **/
+}
+.move-left{
+    transform: translate(-100px,0);
+    -webkit-transform: translate(-100px,0); /** Chrome & Safari **/
+    -o-transform: translate(-100px,0); /** Opera **/
+    -moz-transform: translate(-100px,0); /** Firefox **/
+}
+
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.white-block {
+	background: white;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+	border-radius: 6px;
+	
+	-webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.header {
+	position: relative;
+	height: 250px;
+	padding: 20px;
+	margin: 20px 0 80px;
+	color: #3cbb81;
+}
+.header h1 {
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+.header .brackets {
+	opacity: 0.0;
+	position: absolute;
+	left: 49%;
+	top: 13%;
+	font-size:53px;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	z-index: 1000;
+	
+	transition: all 1.2s ease-out;
+    -webkit-transition: all 1.2s ease-out; /** Chrome & Safari **/
+    -moz-transition: all 1.2s ease-out; /** Firefox **/
+    -o-transition: all 1.2s ease-out; /** Opera **/
+}
+.header .name {
+	font-size:32px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.header .brackets:hover {
+	text-decoration: none;
+}
+
+#works {
+	padding: 40px 20px;
+}
+#works .work-block {
+	padding: 8px 10px;
+	height: 200px;
+	border: 5px solid transparent;
+	/*background: rgba(166, 166, 255, 0.73);*/
+	opacity: 0.0;
+	z-index: 10;
+	
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#works .work-block  .work-block-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+ .work-block:hover {
+	 border-width: 1px !important;
+	 box-shadow: 0 2px 5px 1px grey;
+	 cursor: pointer;
+	 
+	 transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+ }
+.work-block  .work-block-content .work-img {
+	max-width: 100%;
+}
+.work-block  .work-block-content .work-text {
+	font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+	padding-left: 15px;
+}
+.work-block  .work-block-content .work-text h4 {
+		font-size: 1.5em;
+}
+.mask {
+	width: 100%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+	text-align: center;
+	opacity: 0.0;
+	
+}
+.mask a {
+	display: inline-block;
+    text-decoration: none;
+    padding: 1% 4%;
+    margin-left: 3%;
+    background: none repeat scroll 0% 0% #212121;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Yanone Kaffeesatz",Arial,Helvetica,sans-serif;
+    font-size: 1.1em;
+}
+.mask p {
+	font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 0.9em;
+    position: relative;
+    padding: 7% 4% 5% 5%;
+    text-align: center;
+}
+#w1 {
+	background: url(../img/C&B.png) no-repeat;
+}
+#w2 {
+	background: url(../img/Minimo.jpg) no-repeat;
+}
+#w3 {
+	background: url(../img/SimpleSearchSort.png) no-repeat;
+}
+#w4 {
+	background: url(../img/Cuda.jpg) no-repeat;
+}
+#w5 {
+	background: url(../img/Minesweeper.png) no-repeat;
+}
+footer {
+	padding: 20px 10px 20px;
+	margin: 20px 0 20px;
+	font-weight: bold;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+.footer-content {
+	opacity: 0.0;
+}
+.copyright {
+	font-family:  sans-serif;
+	display: inline-block;
+	padding: 1%;
+}
+.socials {
+	float: right;
+}
+.show {
+	opacity: 1.0 !important;
+	
+	-webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -ms-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+.show-mask{
+	opacity: 1.0 !important;
+	
+	background: rgba(201,201,201, 0.7);
+	
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+footer .footer-name {
+	padding-left: 20px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+@media (max-width: 575px) {
+	.work-block {
+		max-width: 350px;
+		margin: auto !important;
+	}
+	.header .name {
+		padding-left: 8px;
+	}
+	.copyright {
+		padding: 2.5%;
+	}
+}
+@media (min-width: 576px) and (max-width: 764px) {
+	.col-xs-12 {
+		width: 50%;
+	}
+	.work-block {
+		max-width: 350px;
+		margin: auto !important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#works .work-block {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%
+	}	
+}
+
+@media (min-width: 1200px) {
+	#works .work-block {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%
+	}	
+}

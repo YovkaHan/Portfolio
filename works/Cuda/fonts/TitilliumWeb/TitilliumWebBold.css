@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TitilliumWebBold';
+    src: url('fonts/TitilliumWebBold.eot');
+    src: url('fonts/TitilliumWebBold.eot') format('embedded-opentype'),
+         url('fonts/TitilliumWebBold.woff2') format('woff2'),
+         url('fonts/TitilliumWebBold.woff') format('woff'),
+         url('fonts/TitilliumWebBold.ttf') format('truetype'),
+         url('fonts/TitilliumWebBold.svg#TitilliumWebBold') format('svg');
+}

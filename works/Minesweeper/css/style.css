@@ -1,0 +1,343 @@
+
+#main {
+	font-family: 'Roboto', sans-serif;
+	background: #3dbb3c;
+}
+/*				Left Block			*/
+#main #leftBlock {
+	display: inline-block;
+	position: absolute;
+	width: 25%;
+	z-index: 1000;
+	border-right: 3px solid black;
+	background: #d43838;
+
+}
+#main #leftBlock  #upperPartLB {
+	height: 100px;
+}
+#main  #showHideBtn{
+	position: absolute;
+	/*right: 50px;*/
+	top: 10px;	
+	height: 30px;
+	width: 60px;	
+	border: 5px solid rgb(255, 255, 255);
+	background: #00b584;
+	border-radius: 15px;
+	cursor: pointer;
+	z-index: 1001;
+}
+#main #leftBlock  #lowerPartLB {
+	width: 75%;
+    margin-left: 25%;
+    display: inline-block;
+	font-size: medium;
+	color: white;
+}
+#main #leftBlock  #lowerPartLB label{
+	margin-right: 5px;
+}
+#main #leftBlock  #lowerPartLB input[type=radio]{
+	margin-top: 6px;
+}
+#main #leftBlock  #lowerPartLB #newGame {
+	margin-top: 50px;
+}
+#main #leftBlock  #lowerPartLB #newGame #usrName {
+	width: 75%;
+}
+#main #leftBlock  #lowerPartLB #newGame #btnNewGame:focus {
+	outline: none;
+}
+
+/*				Main Block			*/
+#main #mainBlock {
+	display: inline-block;
+	position: absolute;
+	padding-top: 10px;
+	left: 0px;
+    width: 100%;
+	z-index: 10;
+	background: #3dbb3c;
+}
+#main #mainBlock  #gameName{
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: 'Revalia', cursive;
+	font-size: 28px;
+	color: white;
+}
+#main #mainBlock  #game{
+	display: none;
+	position: relative;
+	margin-left: 39.5%;
+	padding: 3px;
+	border: 4px solid white;
+	border-radius: 15px;
+	background: #949691;
+}
+#main #mainBlock  #game #gameStats{
+	display: block;
+}
+#main #mainBlock  #game #gameStats #gameTime{
+	display: inline-block;
+	width: 49px;
+	height: 30px;
+	margin: 10px;
+	float: right;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: red;
+	background: black;
+	border: 4px solid white;
+	border-radius: 5px;
+}
+#main #mainBlock  #game #gameStats #gameStart{
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+    width: 44px;
+    height: 38px;
+    margin: 6px 0px 10px;
+	padding-top: 10px;	
+	font-size: 11px;
+	font-family: 'Revalia', cursive;
+	font-weight: bold;
+	background: yellow;
+	border: 1px solid black;
+    border-radius: 20px;
+	cursor: pointer;
+}
+#main #mainBlock  #game #gameStats #minesCount{
+	display: inline-block;
+	width: 49px;
+	height: 30px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	color: red;
+	background: black;
+	border: 4px solid white;
+	border-radius: 5px;
+}
+#main #mainBlock  #game  #field  {
+	display: inline-block;
+	position: relative;
+	/*bottom: 4px;
+	left: 4px;
+	width: 404px;
+	height: 404px;*/
+	width: 289px;
+	border-radius: 2px;
+}
+#main #mainBlock  #game  #field .cell{
+	display: inline-block;
+	position: relative;
+	font-family: fantasy;
+    text-align: center;
+	padding-top: 1px;
+	border: 1px solid blue;
+	background: #ab9eec;
+	margin-right: 2px;
+	cursor: default !important;
+}
+.game-row {
+	display: flex;
+	margin-top: 2px;
+}
+.game-row-last {
+	margin-bottom: 2px;
+}
+.cell-first {
+	margin-left: 2px !important;
+}
+.cell-blank {
+	cursor: default !important;
+	background: white !important;
+}
+
+@media (max-width: 575px) {
+	/*				Left Block			*/
+	#main #leftBlock {
+		display: inline-block;
+		/*display: none;*/
+		width: 100%;
+		border-right: none;
+	}
+	#main #leftBlock  #upperPartLB {
+		height: 0px;
+	}
+	#main  #showHideBtn{
+		position: absolute;
+		right: -10px;
+		top: 10px;	
+		height: 30px;
+		width: 60px;	
+		transform: rotate(90deg);
+		z-index: 1001;
+	}
+	#main #leftBlock  #lowerPartLB {
+		width: 85%;
+		margin-left: 10px;
+		margin-top: 10px;
+		display: inline-block;
+		font-size: medium;
+		color: white;
+	}
+	#main #leftBlock  #lowerPartLB #difficultyChoise {
+		display: inline-block;
+		margin-right: 0;
+	}
+	#main #leftBlock  #lowerPartLB #newGame {
+		display: inline-block;
+		margin-top: 10px;
+		margin-top: 0;
+	}
+	#main #leftBlock  #lowerPartLB #newGame  .form-group {
+		margin-bottom: 10px;
+	}
+	/*				Main Block			*/
+	#main #mainBlock {
+		display: inline-block;
+		position: absolute;
+		left: 0px;
+		z-index: 10;
+		background: #3dbb3c;
+	}
+	#main #mainBlock  #gameName{
+		text-align: center;
+		color: white;
+		margin-bottom: 30px
+	}
+	#main #mainBlock  #game{
+		margin-left: 0;
+	}
+	#main #mainBlock  #game  #field  {
+		display: inline-block;
+		/*bottom: 4px;
+		left: 4px;
+		width: 404px;
+		height: 404px;*/
+	}
+	#main #mainBlock  #game  #field .cell{
+		/*display: inline-block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		border: 1px solid blue;
+		text-align: center;
+		font-weight: bold;
+		font-size: 18px;
+		background: #9588f9;
+		margin-top: 4px;
+		margin-right: 4px;
+		margin-left: -2px;*/
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	
+}
+@media (min-width: 768px) and (max-width: 991px){
+	
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+@media (min-width: 1200px) {
+	
+}
+
+/*Sprite class*/
+.sprite{
+	background-image: url(../img/minesweeper.gif);
+	display: inline-block;
+}
+.timer-0{
+	background-position:0 0;
+	width:13px;
+	height:23px;
+}
+.timer-1{
+	background-position:-13px 0;
+	width:13px;
+	height:23px;
+}
+.timer-2{
+	background-position:-26px 0;
+	width:13px;
+	height:23px;
+}
+.timer-3{
+	background-position:-39px 0;
+	width:13px;
+	height:23px;
+}
+.timer-4{
+	background-position:-52px 0;
+	width:13px;
+	height:23px;
+}
+.timer-5{
+	background-position:-65px 0;
+	width:13px;
+	height:23px;
+}
+.timer-6{
+	background-position:-78px 0;
+	width:13px;
+	height:23px;
+}
+.timer-7{
+	background-position:-91px 0;
+	width:13px;
+	height:23px;
+}
+.timer-8{
+	background-position:-104px 0;
+	width:13px;
+	height:23px;
+}
+.timer-9{
+	background-position:-117px 0;
+	width:13px;
+	height:23px;
+}
+.number-1{
+	color: rgb(0,0,255);
+}
+.number-2{
+	color: rgb(0,123,0);
+}
+.number-3{
+	color: rgb(255,0,0);
+}
+.number-4{
+	color: rgb(0,0,123);
+}
+.number-5{
+	color: rgb(123,0,0);
+}
+.number-6{
+	color: rgb(0,123,123);
+}
+.number-7{
+	color: rgb(0,0,0);
+}
+.number-8{
+	color: rgb(123,123,123);
+}
+.number {
+	background: #e9e8f3 !important;
+}
+.mineshow {
+	background: #ab9eec url(../img/mine.png) no-repeat !important;
+	/*background-size: 20px 20px !important;*/
+}
+.mineshow-blowed {
+	background: red url(../img/mine.png) no-repeat !important;
+	/*background-size: 20px 20px !important;*/
+}
