@@ -17,7 +17,7 @@
 				$onHoverBlock = $('<div class="mask">'  +
 									'<p>'+ this._DESCRIPTION +'</p>' +
 									'<a href="'+ this._PATH+'index.html" class="info">Demo</a>'  +
-									/*'<a href="'+ singleWorkObj.linkToCode + '" class="info">Code</a>' +*/
+									'<a href="'+ this._SOURCE + '" class="info">Code</a>' +
 								'</div>');
 				
 			$workBlockContent.append($workImg);

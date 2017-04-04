@@ -128,7 +128,6 @@ body {
  .work-block:hover {
 	 border-width: 1px !important;
 	 box-shadow: 0 2px 5px 1px grey;
-	 cursor: pointer;
 	 
 	 transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -145,6 +144,17 @@ body {
 .work-block  .work-block-content .work-text h4 {
 		font-size: 1.5em;
 }
+.info {
+	cursor: pointer;
+	
+	transition: all 0.2s ease-out;	
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+.info:hover {
+	background: red;
+}
 .mask {
 	width: 100%;
     height: 90%;
@@ -155,6 +165,11 @@ body {
 	text-align: center;
 	opacity: 0.0;
 	
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .mask a {
 	display: inline-block;
@@ -174,6 +189,18 @@ body {
     position: relative;
     padding: 7% 4% 5% 5%;
     text-align: center;
+	color: red;
+}
+.show-mask{
+	opacity: 1.0 !important;
+	
+	background: rgba(255,255,255, 0.85);
+	
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 #w1 {
 	background: url(../img/C&B.png) no-repeat;
@@ -215,18 +242,6 @@ footer {
     -ms-transition: all 1.5s ease-out;
     -o-transition: all 1.5s ease-out;
     transition: all 1.5s ease-out;
-}
-
-.show-mask{
-	opacity: 1.0 !important;
-	
-	background: rgba(201,201,201, 0.7);
-	
-	-webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
 }
 
 footer .footer-name {
