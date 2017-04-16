@@ -16,8 +16,8 @@
 				$workText = $('<div class="work-text"><h4>'+this._NAME+'</h4></div>'),
 				$onHoverBlock = $('<div class="mask">'  +
 									'<p>'+ this._DESCRIPTION +'</p>' +
-									'<a href="'+ this._PATH+'index.html" class="info">Demo</a>'  +
-									'<a href="'+ this._SOURCE + '" class="info">Code</a>' +
+									'<a href="'+ this._PATH+'index.html" target="_blank" class="info">Demo</a>'  +
+									'<a href="'+ this._SOURCE + '" target="_blank" class="info">Code</a>' +
 								'</div>');
 				
 			$workBlockContent.append($workImg);
