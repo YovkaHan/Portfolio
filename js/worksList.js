@@ -22,6 +22,13 @@ var WORKS_DATA = {
 			"description" : "Angular sample. Get users, search and sort 'em."
 		},
 		{
+			"name" : "Facility",
+			"pathToIndex" : "works/Facility/",
+			"img" : "title.png",
+			"source" : "https://github.com/YovkaHan/yovkahan.github.io/tree/master/works/Facility",
+			"description" : "PSD to HTML template made using HTML, CSS, JS(+jQuery), Bootstrap and SVG graphics. Adaptive + responsive design"
+		},
+		{
 			"name" : "Cuda",
 			"pathToIndex" : "works/Cuda/",
 			"img" : "title.jpg",
